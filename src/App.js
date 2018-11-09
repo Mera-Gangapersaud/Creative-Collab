@@ -6,7 +6,6 @@ import { Debug } from 'boardgame.io/dist/react';
 import React from 'react';
 import { AI } from 'boardgame.io/ai';
 
-
 class TicTacToeBoard extends React.Component {
   onClick(id) {
     if (this.isActive(id)) {
@@ -67,23 +66,21 @@ class TicTacToeBoard extends React.Component {
 
 // Return true if `cells` is in a winning configuration.
 function IsVictory(cells, player) {
-// WINNING LOGIC IS FLAWED
+  // WINNING LOGIC IS FLAWED
   return false;
 }
 
 // Return true if all `cells` are occupied.
 function IsDraw(cells) {
-  return cells.filter(c => c === null).length == 0;
+  return cells.filter((c) => c === null).length == 0;
 }
 
-
 const TicTacToe = Game({
-  setup: () => ({ cells: Array(9).fill(null), }),
-  
+  setup: () => ({ cells: Array(9).fill(null) }),
 
   moves: {
     clickCell(G, ctx, id) {
-      const cells = [ ...G.cells ];
+      const cells = [...G.cells];
 
       // Ensure we can't overwrite cells.
       if (cells[id] === null) {
@@ -105,10 +102,9 @@ const TicTacToe = Game({
       }
     },
   },
-
 });
 
-const App = Client({ 
+const App = Client({
   game: TicTacToe,
   board: TicTacToeBoard,
   debug: false,
