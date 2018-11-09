@@ -9,31 +9,23 @@ class CreativeCollab extends React.Component {
             story: ''
         };
 
-        this.addTextFromFirstEditor = this.addTextFromFirstEditor.bind(this);
-        this.addTextFromSecondEditor = this.addTextFromSecondEditor.bind(this);
+        this.updateStory = this.updateStory.bind(this);
     }
 
-    addTextFromFirstEditor(){
-        let story = this.state.story + this.firstEditor.state.text;
+    updateStory(newText){
         this.setState({
-            story: story
-        }, console.log(this.state.story));
-    }
-
-    addTextFromSecondEditor(){
-        let story = this.state.story + this.secondEditor.state.text;
-        this.setState({
-            story: story
-        }, console.log(this.state.story));
+            story: this.state.story + newText
+        });
     }
 
     render() {
         return (
             <React.Fragment>
                 <div className="editor-container">
-                    <TextEditor handleChange={this.addTextFromFirstEditor}
-                        ref={instance => { this.firstEditor = instance; }} />
-                    <TextEditor handleChange={this.addTextFromSecondEditor}
+                    <TextEditor handleChange={() => this.updateStory(this.firstEditor.state.text)}
+                        ref={instance => { this.firstEditor = instance; }} 
+                        />
+                    <TextEditor handleChange={() => this.updateStory(this.secondEditor.state.text)}
                         ref={instance => { this.secondEditor = instance; }}/>
                 </div>
                 <div className="story-container"  dangerouslySetInnerHTML={{ __html: this.state.story }} /> 
