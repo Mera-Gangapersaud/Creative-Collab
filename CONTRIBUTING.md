@@ -23,8 +23,8 @@ from time to time.
 
 Please commit changes to a separate branch in your fork
 so that we can work together making changes to it before it
-is ready to be merged. Name your branch something like
-`<username/issue-X>/feature`, where X equals the issue number that you are working on.
+is ready to be merged. Branch names should be named
+**issue-X**, where X is the issue number that you are working on.
 
 Once you are ready, you can create a Pull Request for it to be
 merged into the `master` branch in this repo.
