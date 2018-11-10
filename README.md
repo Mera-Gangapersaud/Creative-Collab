@@ -17,3 +17,6 @@ Node version 10.10 | npm version 6.4.1
 $ npm install
 $ npm start
 ```
+
+### Contributing
+Please see the Contributing [guidelines](CONTRIBUTING.md)
