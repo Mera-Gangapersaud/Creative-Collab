@@ -2,7 +2,6 @@
 
 import { Client } from 'boardgame.io/react';
 import { Game } from 'boardgame.io/core';
-import { Debug } from 'boardgame.io/dist/react';
 import React from 'react';
 import { AI } from 'boardgame.io/ai';
 
@@ -72,7 +71,7 @@ function IsVictory(cells, player) {
 
 // Return true if all `cells` are occupied.
 function IsDraw(cells) {
-  return cells.filter((c) => c === null).length == 0;
+  return cells.filter((c) => c === null).length === 0;
 }
 
 const TicTacToe = Game({
