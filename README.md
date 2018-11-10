@@ -11,12 +11,13 @@ This will build the back end of the app which can then be used to further develo
 ### Running the app
 You must have these or a later version installed:
 
-Node version 10.10 | npm version 6.4.1
+* Node version 10.10
+* npm version 6.4.1
 
 ```
-$ npm install
-$ npm start
+$ npm install    # install required packages for creative collab
+$ npm start      # start creative collab at localhost:3000
 ```
 
 ### Contributing
-Please see the Contributing [guidelines](CONTRIBUTING.md)
+Please see the Contributing [guidelines](CONTRIBUTING.md).
