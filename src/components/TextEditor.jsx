@@ -18,7 +18,7 @@ class TextEditor extends React.Component {
       <ReactQuill
         value={this.state.text}
         onChange={this.handleChange}
-        onBlur={this.props.handleChange}
+        // onBlur={this.props.handleChange}
         style={{ width: '500px', height: '300px' }}
       />
     );

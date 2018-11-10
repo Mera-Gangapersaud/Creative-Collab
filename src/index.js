@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
-import CreativeCollab from './CreativeCollab';
+import App from './App';
+import CreativeCollab from './components/CreativeCollab';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<CreativeCollab />, document.getElementById('root'));
