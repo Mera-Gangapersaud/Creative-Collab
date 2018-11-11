@@ -1,16 +1,16 @@
 import React from 'react';
 import { Client } from 'boardgame.io/react';
-import CreativeColabGame from './game';
+import CreativeCollabGame from './game';
 import Board from './board';
 
 const App = Client({
-  game: CreativeColabGame,
+  game: CreativeCollabGame,
   board: Board,
   debug: true,
-  multiplayer: { local: true },
+  multiplayer: { server: 'localhost:8000' },
 });
 
-const CreativeColab = () => (
+const CreativeCollab = () => (
   <div className="container" style={{ padding: 50 }}>
     <h1>CreativeColab</h1>
     <div>
@@ -18,15 +18,8 @@ const CreativeColab = () => (
         <App gameID="multi" playerID="0" />
         &lt;App playerID=&quot;0&quot;/&gt;
       </div>
-      <br />
-      <br />
-      <br />
-      <div>
-        <App gameID="multi" playerID="1" />
-        &lt;App playerID=&quot;1&quot;/&gt;
-      </div>
     </div>
   </div>
 );
 
-export default CreativeColab;
+export default CreativeCollab;

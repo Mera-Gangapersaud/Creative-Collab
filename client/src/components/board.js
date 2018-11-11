@@ -4,7 +4,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import StoryBoard from './storyBoard';
-import './creative-colab.css';
+import './creative-collab.css';
 
 class Board extends React.Component {
   constructor(props) {

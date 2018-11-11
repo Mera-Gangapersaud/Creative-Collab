@@ -1,7 +1,7 @@
 import { Game } from 'boardgame.io/core';
 
-const CreativeColabGame = Game({
-  name: 'creative-colab',
+const CreativeCollabGame = Game({
+  name: 'creative-collab',
 
   setup: () => ({
     storySoFar: [],
@@ -20,4 +20,4 @@ const CreativeColabGame = Game({
   },
 });
 
-export default CreativeColabGame;
+export default CreativeCollabGame;

@@ -1,0 +1,11 @@
+.editor, .story-container {
+  width: 500px;
+  height: 400px;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.story-container {
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+}
