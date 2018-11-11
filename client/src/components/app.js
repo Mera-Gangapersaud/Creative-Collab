@@ -1,16 +1,16 @@
 import React from 'react';
 import { Client } from 'boardgame.io/react';
-import CreativeColab from './game';
+import CreativeColabGame from './game';
 import Board from './board';
 
 const App = Client({
-  game: CreativeColab,
+  game: CreativeColabGame,
   board: Board,
   debug: true,
   multiplayer: { local: true },
 });
 
-const Singleplayer = () => (
+const CreativeColab = () => (
   <div className="container" style={{ padding: 50 }}>
     <h1>CreativeColab</h1>
     <div>
@@ -29,4 +29,4 @@ const Singleplayer = () => (
   </div>
 );
 
-export default Singleplayer;
+export default CreativeColab;

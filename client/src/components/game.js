@@ -1,6 +1,6 @@
 import { Game } from 'boardgame.io/core';
 
-const CreativeColab = Game({
+const CreativeColabGame = Game({
   name: 'creative-colab',
 
   setup: () => ({
@@ -11,13 +11,13 @@ const CreativeColab = Game({
     clickDone(G, ctx, story) {
       const storySoFar = [...G.storySoFar];
       storySoFar.push(story);
-      return { ...G, storySoFar }
-    }
+      return { ...G, storySoFar };
+    },
   },
 
   flow: {
     movesPerTurn: 1,
-  }
+  },
 });
 
-export default CreativeColab;
+export default CreativeColabGame;

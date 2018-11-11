@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Editor from './editor';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import StoryBoard from './storyBoard';
-// import './board.css';
+import './creative-colab.css';
 
 class Board extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { text: '' }
-    this.handleChange = this.handleChange.bind(this)
+    super(props);
+    this.state = { text: '' };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   static propTypes = {
@@ -26,7 +25,7 @@ class Board extends React.Component {
   };
 
   handleChange(value) {
-    this.setState({ text: value })
+    this.setState({ text: value });
   }
 
   onDone = () => {
@@ -53,7 +52,7 @@ class Board extends React.Component {
             value={this.state.text}
             onChange={this.handleChange}
             theme={this.isActive() ? 'snow' : 'bubble'}
-            style={{ width: '500px', height: '300px' }}
+            className="editor"
           />
           <br />
           <br />
@@ -62,7 +61,7 @@ class Board extends React.Component {
         </div>
 
         <div className="col-6">
-          <StoryBoard story={ this.props.G.storySoFar }/>
+          <StoryBoard story={this.props.G.storySoFar} />
         </div>
         {disconnected}
       </div>

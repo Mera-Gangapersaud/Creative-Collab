@@ -1,0 +1,10 @@
+.editor, .story-container {
+  width: 500px;
+  height: 300px;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.story-container {
+  overflow-y: scroll;
+}
