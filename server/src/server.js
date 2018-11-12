@@ -1,5 +1,5 @@
-const Server = require("boardgame.io/server").Server;
-const CreativeCollabGame = require("./game").CreativeCollabGame;
+const Server = require('boardgame.io/server').Server;
+const CreativeCollabGame = require('./game').CreativeCollabGame;
 
 const server = Server({ games: [CreativeCollabGame] });
 

@@ -1,10 +1,10 @@
-const Game = require("boardgame.io/core").Game;
+const Game = require('boardgame.io/core').Game;
 
 const CreativeCollabGame = Game({
-  name: "creative-collab",
+  name: 'creative-collab',
 
   setup: () => ({
-    storySoFar: []
+    storySoFar: [],
   }),
 
   moves: {
@@ -12,12 +12,12 @@ const CreativeCollabGame = Game({
       const storySoFar = [...G.storySoFar];
       storySoFar.push(story);
       return { ...G, storySoFar };
-    }
+    },
   },
 
   flow: {
-    movesPerTurn: 1
-  }
+    movesPerTurn: 1,
+  },
 });
 
 module.exports = { CreativeCollabGame };
