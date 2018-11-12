@@ -5,11 +5,11 @@ node_js:
   - "10.10"
 cache:
   directories:
-    - node_modules
+    - client/node_modules
 before_install:
   - npm i -g npm@6.4.1
 before_script:
-  - cd client
+  - cd client && npm install
 script:
   - npm test
   - npm run build
