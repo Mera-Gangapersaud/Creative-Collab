@@ -11,10 +11,11 @@ Each participant takes a turn to add a limited amount of text (ie: 100 words max
 This will build the back end of the app which can then be used to further develop front ends on different platforms.
 
 ### Running the app
+
 You must have these or a later version installed:
 
-* Node version 10.10
-* npm version 6.4.1
+- Node version 10.10
+- npm version 6.4.1
 
 ```
 $ npm install    # install required packages for creative collab
@@ -22,4 +23,5 @@ $ npm start      # start creative collab at localhost:3000
 ```
 
 ### Contributing
+
 Please see the Contributing [guidelines](CONTRIBUTING.md).
