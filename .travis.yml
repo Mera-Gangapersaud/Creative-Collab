@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - 'stable'
-  - 'lts/*'
-  - '10.10'
+  - "stable"
+  - "lts/*"
+  - "10.10"
 cache:
   directories:
     - node_modules
