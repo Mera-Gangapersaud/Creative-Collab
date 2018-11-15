@@ -69,19 +69,12 @@ class Board extends React.Component {
             />
           </div>
           <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-<<<<<<< HEAD
             <button class="send-button" onClick={() => this.onDone()}>
               Tell Tale
             </button>
           </div>
         </div>
       </div>
-=======
-            <button class="send-button" onClick={() => this.onDone()}>Tell Tale</button>
-          </div>
-        </div>
-      </div >
->>>>>>> Some fixes to layout matching wireframe
     );
   }
 }
