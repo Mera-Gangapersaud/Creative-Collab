@@ -12,9 +12,10 @@ const App = Client({
 
 const CreativeCollab = () => (
   <div className="container" style={{ padding: 50 }}>
-    <h1>CreativeColab</h1>
+    <h1>CreativeColab1</h1>
     <div>
       <div>
+        <br/>
         <App gameID="multi" playerID="0" />
         &lt;App playerID=&quot;0&quot;/&gt;
       </div>
