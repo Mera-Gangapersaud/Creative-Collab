@@ -15,7 +15,7 @@ const CreativeCollab = () => (
     <h1>CreativeColab1</h1>
     <div>
       <div>
-        <br/>
+        <br />
         <App gameID="multi" playerID="0" />
         &lt;App playerID=&quot;0&quot;/&gt;
       </div>
