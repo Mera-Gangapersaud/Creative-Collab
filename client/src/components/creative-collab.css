@@ -1,12 +1,30 @@
-.editor,
+.editor{
+  width: 95%;
+  height: 200px;
+  max-width: 1500px;
+  max-height: 400px;
+  padding-bottom: 5%;
+  padding-left: 1%;
+}
 .story-container {
-  width: 500px;
+  width: 90%;
   height: 400px;
-  max-width: 500px;
+  max-width: 1500px;
   max-height: 400px;
 }
-
+#players-container {
+  text-align: left;
+  width: 15%;
+  height: inherit;
+  max-width: 15%;
+  max-height: 700px;
+  border: solid;
+}
 .story-container {
   overflow-y: scroll;
   overflow-wrap: break-word;
+}
+.send-button{
+  width: 100px;
+  height: 100px;
 }
