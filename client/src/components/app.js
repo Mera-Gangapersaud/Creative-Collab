@@ -12,7 +12,7 @@ const App = Client({
 
 const CreativeCollab = () => (
   <div className="container" style={{ padding: 50 }}>
-    <h1>CreativeColab1</h1>
+    <h1>CreativeColab</h1>
     <div>
       <div>
         <br />
