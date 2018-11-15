@@ -49,7 +49,7 @@ class Board extends React.Component {
       <div>
         <br />
         <div class="row">
-          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="players-container" >
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="players-container">
             <h4>Player 1</h4>
             <h4>Player 2</h4>
           </div>
@@ -69,10 +69,12 @@ class Board extends React.Component {
             />
           </div>
           <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <button class="send-button" onClick={() => this.onDone()}>Tell Tale</button>
+            <button class="send-button" onClick={() => this.onDone()}>
+              Tell Tale
+            </button>
           </div>
         </div>
-      </div >
+      </div>
     );
   }
 }

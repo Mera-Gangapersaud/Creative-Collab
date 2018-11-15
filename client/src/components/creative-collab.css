@@ -1,4 +1,4 @@
-.editor{
+.editor {
   width: 95%;
   height: 200px;
   max-width: 1500px;
@@ -24,7 +24,7 @@
   overflow-y: scroll;
   overflow-wrap: break-word;
 }
-.send-button{
+.send-button {
   width: 100px;
   height: 100px;
 }
