@@ -1,25 +1,16 @@
 import React from 'react';
-import { Client } from 'boardgame.io/react';
-import CreativeCollabGame from './game';
-import Board from './board';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import routes from '../routes';
 
-const App = Client({
-  game: CreativeCollabGame,
-  board: Board,
-  debug: true,
-  multiplayer: { server: 'localhost:8000' },
-});
-
-const CreativeCollab = () => (
-  <div className="container" style={{ padding: 50 }}>
-    <h1>CreativeColab</h1>
-    <div>
-      <div>
-        <App gameID="multi" playerID="0" />
-        &lt;App playerID=&quot;0&quot;/&gt;
-      </div>
-    </div>
-  </div>
+const App = () => (
+  <Router>
+    <Switch>
+      {Object.values(routes).map((e) => (
+        <Route key={e.path} {...e}/>
+      ))}
+      <Redirect to={routes.home.path} />
+    </Switch>
+  </Router>
 );
 
-export default CreativeCollab;
+export default App;
