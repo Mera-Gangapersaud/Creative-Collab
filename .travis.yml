@@ -1,15 +1,19 @@
 language: node_js
+branches:
+  only:
+    - master
 node_js:
   - "stable"
   - "lts/*"
   - "10.10"
 cache:
   directories:
-    - client/node_modules
+    - "$HOME/.npm"
 before_install:
   - npm i -g npm@6.4.1
 before_script:
   - cd client
+  - npm ci
 script:
   - npm test
   - npm run build
