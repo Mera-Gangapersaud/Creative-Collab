@@ -4,7 +4,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import StoryBoard from './storyBoard';
-import './creative-collab.css';
+import './board.css';
 
 class Board extends React.Component {
   constructor(props) {
@@ -48,19 +48,19 @@ class Board extends React.Component {
     return (
       <div>
         <br />
-        <div class="row">
-          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="players-container">
+        <div className="row">
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="players-container">
             <h4>Player 1</h4>
             <h4>Player 2</h4>
           </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <StoryBoard story={this.props.G.storySoFar} />
           </div>
         </div>
         {disconnected}
         <br />
-        <div class="row">
-          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <div className="row">
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <ReactQuill
               value={this.state.text}
               onChange={this.handleChange}
@@ -68,8 +68,8 @@ class Board extends React.Component {
               className="editor"
             />
           </div>
-          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <button class="send-button" onClick={() => this.onDone()}>
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <button className="send-button" onClick={() => this.onDone()}>
               Tell Tale
             </button>
           </div>
