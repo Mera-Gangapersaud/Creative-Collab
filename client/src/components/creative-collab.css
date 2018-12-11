@@ -20,13 +20,37 @@
   height: inherit;
   max-width: 15%;
   max-height: 700px;
-  border: solid;
+  border: solid 2px;
+  border-radius: 10px;
+  background:  #33ffcc;
 }
 .story-container {
   overflow-y: scroll;
   overflow-wrap: break-word;
 }
+
 .send-button {
   width: 100px;
   height: 100px;
+}
+
+
+.collab-header{
+  background-color: #ff5500;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  width: 100%;
+}
+
+#playerinfo-panel{
+  width: 250px;
+  height: 120px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#collabH1ver{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: left;
 }

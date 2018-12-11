@@ -42,7 +42,7 @@ class Board extends React.Component {
   render() {
     let disconnected = null;
     if (this.props.isMultiplayer && !this.props.isConnected) {
-      disconnected = <div>Disconnected!</div>;
+      disconnected = "Disconnected";
     }
 
     return (
@@ -50,14 +50,16 @@ class Board extends React.Component {
         <br />
         <div class="row">
           <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="players-container">
-            <h4>Player 1</h4>
-            <h4>Player 2</h4>
+            <h1 id="collabH1ver">Writers</h1>
+            <ul class="list-group">
+              <li class="list-group-item"><h5>Player 1</h5></li>
+              <li class="list-group-item"><h5>Player 2</h5></li>
+            </ul>
           </div>
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <StoryBoard story={this.props.G.storySoFar} />
           </div>
         </div>
-        {disconnected}
         <br />
         <div class="row">
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
@@ -69,12 +71,23 @@ class Board extends React.Component {
             />
           </div>
           <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <button class="send-button" onClick={() => this.onDone()}>
+            <button class="btn btn-primary" style={{
+              marginTop: '50px',
+              marginRight: '80px',
+              width: '100px',
+              height: '50px'
+            }}
+              onClick={() => this.onDone()}>
               Tell Tale
             </button>
           </div>
         </div>
-      </div>
+        <div id="playerinfo-panel" class="alert alert-primary" role="alert">
+          <h5>Player Information</h5>
+          <b>Player Status: </b> {disconnected}<br></br>
+          <b>Player Name:</b>
+        </div>
+      </div >
     );
   }
 }

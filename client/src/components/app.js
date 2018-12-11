@@ -11,13 +11,11 @@ const App = Client({
 });
 
 const CreativeCollab = () => (
-  <div className="container" style={{ padding: 50 }}>
-    <h1>CreativeColab</h1>
+  <div className="container">
+    <h1 className="collab-header">CreativeCollab</h1>
     <div>
       <div>
-        <br />
         <App gameID="multi" playerID="0" />
-        &lt;App playerID=&quot;0&quot;/&gt;
       </div>
     </div>
   </div>
