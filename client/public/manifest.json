@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Creative-Collab",
+  "name": "Creative-Collab App",
+  "description": "A creative collaborative writing app",
   "icons": [
     {
       "src": "favicon.ico",
