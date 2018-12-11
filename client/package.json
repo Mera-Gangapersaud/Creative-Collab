@@ -1,6 +1,12 @@
 {
   "name": "creative-collab-client",
-  "version": "0.1.0",
+  "version": "0.3.0",
+  "author": "Mera Gangapersaud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mera-Gangapersaud/Creative-Collab/issues"
+  },
+  "homepage": "https://github.com/Mera-Gangapersaud/Creative-Collab",
   "private": true,
   "husky": {
     "hooks": {
